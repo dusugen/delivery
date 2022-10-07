@@ -1,0 +1,90 @@
+.work {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__counter {
+    flex: 0 1 46%;
+    padding-top: 170px;
+    padding-left: 140px;
+  }
+  &__counter-title {
+    font-family: $PrimaryFont;
+    color: $PrimaryColor;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+  }
+  &__counter-number {
+    font-size: 54px;
+    line-height: 81px;
+    font-family: $PrimaryFont;
+    font-weight: 600;
+  }
+  &__counter-box {
+    max-width: 237px;
+    padding-bottom: 6px;
+    border-bottom: 3px solid #ffce50;
+  }
+  &__counter-text {
+    font-family: $SecondaryFont;
+    color: $SecondaryColor;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  &__choice {
+    flex: 0 1 54%;
+    margin-bottom: 100px;
+  }
+  &__title {
+    font-size: 48px;
+    font-family: $PrimaryFont;
+    color: $PrimaryColor;
+    line-height: 60px;
+    font-weight: 600;
+    margin-bottom: 32px;
+  }
+  &__descr {
+    font-family: $SecondaryFont;
+    color: $SecondaryColor;
+    line-height: 24px;
+    margin-bottom: 40px;
+  }
+}
+
+.card {
+  &__wrapper {
+    display: flex;
+    // align-items: flex-start;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+    padding-top: 40px;
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__radio-wrapper {
+    margin-top: 8px;
+    margin-right: 32px;
+    margin-left: 40px;
+  }
+  &__radio-input {
+    zoom: 1.2;
+  }
+
+  &__title {
+    font-family: $PrimaryFont;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+  &__descr {
+    font-family: $SecondaryFont;
+    color: $SecondaryColor;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 48px;
+  }
+}

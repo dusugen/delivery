@@ -1,0 +1,68 @@
+.profit {
+  position: relative;
+  &__hero {
+    background-image: url(/images/src/profit__hero--small.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: -100px;
+    align-items: flex-end;
+    min-width: 1340px;
+  }
+  &__hero-trapezoid {
+    margin-bottom: 72px;
+    width: 769px;
+    border-bottom: 453px solid #0b7572;
+    border-right: 420px solid transparent;
+  }
+  &__header {
+    position: absolute;
+    top: 160px;
+    left: 101px;
+    width: 362px;
+    font-family: $PrimaryFont;
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 600;
+    color: #fff;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+  }
+  &__item {
+    max-width: 447px;
+    display: flex;
+    flex-direction: row;
+    &:not(:nth-child(2n)) {
+      margin-bottom: 62px;
+    }
+  }
+  &__item-left {
+    display: flex;
+    flex-direction: column;
+    margin-left: 64px;
+  }
+
+  &__item-right {
+    margin-right: 142px;
+  }
+
+  &__icon {
+    margin-right: 40px;
+  }
+
+  &__title {
+    font-family: $PrimaryFont;
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  &__descr {
+    font-family: $SecondaryFont;
+    color: $SecondaryColor;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

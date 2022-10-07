@@ -1,0 +1,29 @@
+.hero__wrapper {
+  margin-top: 110px;
+  display: flex;
+  margin-bottom: 67px;
+}
+.hero__img {
+  width: 635px;
+}
+.hero__title {
+  font-size: 52px;
+  line-height: 65px;
+  font-family: $PrimaryFont;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: $PrimaryColor;
+}
+.hero__descr {
+  width: 525px;
+  font-family: $SecondaryFont;
+  color: $SecondaryColor;
+  margin-bottom: 40px;
+}
+
+.hero__more {
+  font-weight: 600;
+  font-family: $SecondaryFont;
+  padding-bottom: 4px;
+  border-bottom: 3px solid #ffce50;
+}

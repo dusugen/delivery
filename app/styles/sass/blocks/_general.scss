@@ -19,6 +19,8 @@ ol {
 }
 
 .container {
-  width: 1440px;
-  padding: 0 100px 0 100px;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 100px;
 }

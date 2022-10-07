@@ -2,12 +2,45 @@
   &__list {
     display: flex;
     flex-direction: column;
+    margin-bottom: 120px;
   }
   &__item {
+    position: relative;
     display: flex;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.12);
     border-radius: 10px;
     padding: 32px 0;
+    background-image: radial-gradient(
+      circle at 0%,
+      transparent 41px,
+      #fff 31px
+    );
+    filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.12));
+    background-position-y: center;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 68px;
+      height: 68px;
+      left: -36px;
+      top: calc(50% - 34px);
+      text-align: center;
+      line-height: 68px;
+      border-radius: 50%;
+      background-color: #0b7572;
+      font-size: 38px;
+      font-family: $PrimaryFont;
+      color: #fff;
+    }
+    &:first-child::before {
+      content: "1";
+    }
+    &:nth-child(2)::before {
+      content: "2";
+    }
+    &:nth-child(3)::before {
+      content: "3";
+    }
+
     &:not(:last-child) {
       margin-bottom: 24px;
     }

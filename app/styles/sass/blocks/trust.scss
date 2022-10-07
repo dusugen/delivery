@@ -1,0 +1,41 @@
+.trust {
+  &__header {
+    font-family: $PrimaryFont;
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 600;
+    margin-bottom: 90px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item {
+    line-height: 140px;
+    flex: 0 1 25%;
+    text-align: center;
+    margin-bottom: 50px;
+    &:nth-last-child(-n + 4) {
+      margin-bottom: 0px;
+    }
+    &:not(:nth-child(4n)) {
+      border-right: 1px solid #d7d7dd;
+    }
+  }
+
+  &__title {
+    font-family: $PrimaryFont;
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 600;
+    margin-bottom: 14px;
+  }
+
+  &__descr {
+    font-family: $SecondaryFont;
+    color: $SecondaryColor;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}

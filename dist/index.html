@@ -1,35 +1,643 @@
 
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <!-- <base href="/"> -->
 
-<head>
+    <title>delivery</title>
+    <meta name="description" content="" />
 
-	<meta charset="utf-8">
-	<!-- <base href="/"> -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-	<title>OptimizedHTML 5</title>
-	<meta name="description" content="Startup HTML template OptimizedHTML 5">
+    <link rel="icon" href="images/favicon.png" />
+    <meta property="og:image" content="images/dist/preview.jpg" />
+    <link rel="stylesheet" href="css/app.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet" />
+    <title>delivery</title>
+  </head>
+  <body>
+    <section class="hero">
+      <div class="container">
+        <div class="hero__wrapper">
+          <div class="hero__text">
+            <div class="hero__title">Поставщик Дальнего Востока</div>
+            <div class="hero__descr">
+              Наши клиенты получают полный спектр услуг по работе с Китаем.Начиная с подбора
+              производителя заканчивая доставкой товара до двери. Настолько прозрачных сделок с
+              Китаем вы еще не осуществляли.
+            </div>
+            <a href="#" class="hero__more">Узнать больше</a>
+          </div>
+          <img src="images/hero__img.png" alt="" />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<section class="benefits">
+  <div class="container">
+    <div class="benefits__content">
+      <div class="benefits__card">
+        <img src="images/benefits__manufacture.svg" alt="" class="benefits__icon" />
+        <div class="benefits__text">Поиск производителей по товару</div>
+        <div class="benefits__descr">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut.
+        </div>
+      </div>
+      <div class="benefits__card">
+        <img src="images/benefits__specific.svg" alt="" class="benefits__icon" />
+        <div class="benefits__text">Поиск конкретного производителя</div>
+        <div class="benefits__descr">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut.
+        </div>
+      </div>
+      <div class="benefits__card">
+        <img src="images/benefits__delivery.svg" alt="" class="benefits__icon" />
+        <div class="benefits__text">Доставка образцов товаров</div>
+        <div class="benefits__descr">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-	<link rel="icon" href="images/favicon.png">
-	<meta property="og:image" content="images/dist/preview.jpg">
-	
-	<link rel="stylesheet" href="css/app.min.css">
+<section class="work">
+  <div class="container">
+    <div class="work__wrapper">
+      <div class="work__choice">
+        <div class="work__title">В какой сфере вы работаете?</div>
+        <div class="work__descr">
+          Мы проводим опрос среди пользователей сайта, чтобы предоставить Вам
+          информацию соответствующую сфере Вашей деятельности.
+        </div>
+        <form action="#" class="work__card">
+          <div class="card__wrapper">
+            <div class="card__radio-wrapper">
+              <input
+                type="radio"
+                id="manufacture"
+                name="fav_language"
+                value="manufacture"
+                class="card__radio-input"
+              />
+            </div>
+            <label for="manufacture">
+              <div class="card__title">Я работаю на произвостве</div>
+              <div class="card__descr">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+            </label>
+          </div>
+          <div class="card__wrapper">
+            <div class="card__radio-wrapper">
+              <input
+                type="radio"
+                id="supply"
+                name="fav_language"
+                value="supply"
+                class="card__radio-input"
+              />
+            </div>
 
-</head>
+            <label for="supply">
+              <div class="card__title">Я поставляю товары</div>
+              <div class="card__descr">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+            </label>
+          </div>
+          <div class="card__wrapper">
+            <div class="card__radio-wrapper">
+              <input
+                type="radio"
+                id="help"
+                name="fav_language"
+                value="help"
+                class="card__radio-input"
+              />
+            </div>
+            <label for="help">
+              <div class="card__title">Я помогаю подобрать оборудование</div>
+              <div class="card__descr">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+            </label>
+          </div>
+        </form>
+      </div>
+      <div class="work__counter">
+        <div class="work__counter-box">
+          <p class="work__counter-title">Проголосовало :</p>
+          <span class="work__counter-number">1 107</span>
+          <span class="work__counter-text">пользователей</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-<body>
+<section class="profit">
+  <div class="container">
+    <div class="profit__hero">
+      <div class="profit__header">Почему с нами выгоднее?</div>
+    </div>
+    <div class="profit__list">
+      <div class="profit__item-left">
+        <div class="profit__item">
+          <div class="profit__icon">
+            <img src="images/profit__lock.svg" alt="" />
+          </div>
+          <div class="profit__text">
+            <div class="profit__title">Lorem ipsum dolor sit amet</div>
+            <div class="profit__descr">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ut.
+            </div>
+          </div>
+        </div>
+        <div class="profit__item">
+          <div class="profit__icon">
+            <img src="images/profit__money.svg" alt="" />
+          </div>
+          <div class="profit__text">
+            <div class="profit__title">Lorem ipsum dolor sit amet</div>
+            <div class="profit__descr">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ut.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="profit__item-right">
+        <div class="profit__item">
+          <div class="profit__icon">
+            <img src="images/profit__list.svg" alt="" />
+          </div>
+          <div class="profit__text">
+            <div class="profit__title">Lorem ipsum dolor sit amet</div>
+            <div class="profit__descr">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ut.
+            </div>
+          </div>
+        </div>
+        <div class="profit__item">
+          <div class="profit__icon">
+            <img src="images/profit__web.svg" alt="" />
+          </div>
+          <div class="profit__text">
+            <div class="profit__title">Lorem ipsum dolor sit amet</div>
+            <div class="profit__descr">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ut.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-	<div style="max-width: 700px; margin: auto">
+<section class="complete">
+  <div class="container">
+    <div class="complete__header">Выполненные работы</div>
+    <div class="complete__header-descr">
+      Мы собрали информацию по грузам, которые мы уже доставили. У нас специальный подход к каждому
+      виду товаров.
+    </div>
+    <div class="complete__list">
+      <div class="complete__card">
+        <div class="complete__card-img">
+          <img src="images/complete__img1.png" alt="" />
+        </div>
+        <div class="complete__card-title">Станки и оборудование</div>
+        <div class="complete__card-descr">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ut.
+        </div>
+        <div class="complete__card-price">20 000 руб.</div>
+      </div>
+      <div class="complete__card">
+        <div class="complete__card-img">
+          <img src="images/complete__img2.png" alt="" />
+        </div>
+        <div class="complete__card-title">Компоненты и запчасти</div>
+        <div class="complete__card-descr">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ut.
+        </div>
+        <div class="complete__card-price">18 000 руб.</div>
+      </div>
+      <div class="complete__card">
+        <div class="complete__card-img">
+          <img src="images/complete__img3.png" alt="" />
+        </div>
+        <div class="complete__card-title">Станки и оборудование</div>
+        <div class="complete__card-descr">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ut.
+        </div>
+        <div class="complete__card-price">20 000 руб.</div>
+      </div>
+    </div>
+  </div>
+</section>
 
-		<img src="images/dist/preview.jpg" alt="Start HTML5 Template" style="width: 100%"><br><br>
-		<h2 class="heading">Welcome to startup HTML template OptimizedHTML 5!</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam reprehenderit nulla alias expedita a qui, pariatur doloremque ipsa fugit laboriosam odio iure recusandae laborum delectus praesentium magni reiciendis voluptatem. Sed.</p>
+<section class="stages">
+  <div class="container">
+    <div class="stages__header">Этапы поставки</div>
+    <div class="stages__list">
+      <div class="stages__item">
+        <img src="images/stages__offer.png" alt="" class="stages__item-img" />
+        <div class="stages__item-text">
+          <div class="stages__item-title">Предложение от продавца</div>
+          <div class="stages__item-line"></div>
+          <div class="stages__item-descr">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Elit duis tristique sollicitudin nibh sit
+            amet. Ultrices eros in cursus turpis massa tincidunt. Venenatis urna cursus eget nunc
+            scelerisque viverra mauris in.
+          </div>
+        </div>
+      </div>
+      <div class="stages__item">
+        <img src="images/stages__delivery.png" alt="" class="stages__item-img" />
+        <div class="stages__item-text">
+          <div class="stages__item-title">Доставка</div>
+          <div class="stages__item-line"></div>
+          <div class="stages__item-descr">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Elit duis tristique sollicitudin nibh sit
+            amet. Ultrices eros in cursus turpis massa tincidunt. Venenatis urna cursus eget nunc
+            scelerisque viverra mauris in.
+          </div>
+        </div>
+      </div>
+      <div class="stages__item">
+        <img src="images/stages__install.png" alt="" class="stages__item-img" />
+        <div class="stages__item-text">
+          <div class="stages__item-title">Установка у клиента</div>
+          <div class="stages__item-line"></div>
+          <div class="stages__item-descr">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Elit duis tristique sollicitudin nibh sit
+            amet. Ultrices eros in cursus turpis massa tincidunt. Venenatis urna cursus eget nunc
+            scelerisque viverra mauris in.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-	</div>
+<section class="trust">
+  <div class="container">
+    <div class="trust__header">Нам не доверяют</div>
+    <div class="trust__list">
+      <div class="trust__item">
+        <img src="images/trust__rosatom.png" alt="" class="trust__img" />
+        <div class="trust__title">Росатом</div>
+        <div class="trust__descr">Корпорация атомной энергии</div>
+      </div>
+      <div class="trust__item">
+        <img src="images/trust__gazprom.png" alt="" class="trust__img" />
+        <div class="trust__title">Газпром</div>
+        <div class="trust__descr">Энергетическая компания</div>
+      </div>
+
+      <div class="trust__item">
+        <img src="images/trust__rosneft.png" alt="" class="trust__img" />
+        <div class="trust__title">Роснефть</div>
+        <div class="trust__descr">Нефтегазовая компания</div>
+      </div>
+      <div class="trust__item">
+        <img src="images/trust__roscosmos.png" alt="" class="trust__img" />
+        <div class="trust__title">Роскосмос</div>
+        <div class="trust__descr">Корпорация в космической отрасли</div>
+      </div>
+      <div class="trust__item">
+        <img src="images/trust__lukoil.png" alt="" class="trust__img" />
+        <div class="trust__title">Лукойл</div>
+        <div class="trust__descr">Нефтяная компания</div>
+      </div>
+      <div class="trust__item">
+        <img src="images/trust__inter.png" alt="" class="trust__img" />
+        <div class="trust__title">Интер РАО</div>
+        <div class="trust__descr">Энергетическая компания</div>
+      </div>
+      <div class="trust__item">
+        <img src="images/trust__rostech.png" alt="" class="trust__img" />
+        <div class="trust__title">Ростех</div>
+        <div class="trust__descr">Промышленная корпорация</div>
+      </div>
+      <div class="trust__item">
+        <img src="images/trust__vtb.png" alt="" class="trust__img" />
+        <div class="trust__title">Банк ВТБ</div>
+        <div class="trust__descr">Коммерческий банк</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="employees">
+  <div class="container">
+    <div class="employees__header">Сотрудники компании</div>
+    <div class="employees__list">
+      <div class="employees__item">
+        <div class="employees__item-left"></div>
+        <div class="employees__item-right">
+          <img src="images/employees__malina.jpg" alt="" class="employees__foto" />
+          <div class="employees__descr">
+            <div class="employees__name">Кирилл Малина</div>
+            <div class="employees__post">Руководитель компании</div>
+            <ul class="employees__social">
+              <li class="employees__social-item">
+                <a href="#" class="employees__inst">
+                  <img src="images/employees__inst.svg" alt="" class="employees__logo" />
+                </a>
+              </li>
+              <li class="employees__social-item">
+                <a href="#" class="employees__vk">
+                  <img src="images/employees__vk.svg" alt="" class="employees__logo" />
+                </a>
+              </li>
+              <li class="employees__social-item">
+                <a href="#" class="employees__linkedin">
+                  <img src="images/employees__linkedin.svg" alt="" class="employees__logo" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="employees__item">
+        <div class="employees__item-left"></div>
+        <div class="employees__item-right">
+          <img src="images/employees__zhukov.jpg" alt="" class="employees__foto" />
+          <div class="employees__descr">
+            <div class="employees__name">Иван Жуков</div>
+            <div class="employees__post">Тимлид компании</div>
+            <ul class="employees__social">
+              <li class="employees__social-item">
+                <a href="#" class="employees__inst">
+                  <img src="images/employees__inst.svg" alt="" class="employees__logo" />
+                </a>
+              </li>
+              <li class="employees__social-item">
+                <a href="#" class="employees__vk">
+                  <img src="images/employees__vk.svg" alt="" class="employees__logo" />
+                </a>
+              </li>
+              <li class="employees__social-item">
+                <a href="#" class="employees__linkedin">
+                  <img src="images/employees__linkedin.svg" alt="" class="employees__logo" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="employees__item">
+        <div class="employees__item-left"></div>
+        <div class="employees__item-right">
+          <img src="images/employees__fesenko.jpg" alt="" class="employees__foto" />
+          <div class="employees__descr">
+            <div class="employees__name">Александр Фесенко</div>
+            <div class="employees__post">Веб-дизайнер / профессиональный гонщик</div>
+            <ul class="employees__social">
+              <li class="employees__social-item">
+                <a href="#" class="employees__inst">
+                  <img src="images/employees__inst.svg" alt="" class="employees__logo" />
+                </a>
+              </li>
+              <li class="employees__social-item">
+                <a href="#" class="employees__vk">
+                  <img src="images/employees__vk.svg" alt="" class="employees__logo" />
+                </a>
+              </li>
+              <li class="employees__social-item">
+                <a href="#" class="employees__linkedin">
+                  <img src="images/employees__linkedin.svg" alt="" class="employees__logo" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="employees__item">
+        <div class="employees__item-left"></div>
+        <div class="employees__item-right">
+          <img src="images/employees__shedrakov.jpg" alt="" class="employees__foto" />
+          <div class="employees__descr">
+            <div class="employees__name">Михаил Щедраков</div>
+            <div class="employees__post">Главный работяга компании</div>
+            <ul class="employees__social">
+              <li class="employees__social-item">
+                <a href="#" class="employees__inst">
+                  <img src="images/employees__inst.svg" alt="" class="employees__logo" />
+                </a>
+              </li>
+              <li class="employees__social-item">
+                <a href="#" class="employees__vk">
+                  <img src="images/employees__vk.svg" alt="" class="employees__logo" />
+                </a>
+              </li>
+              <li class="employees__social-item">
+                <a href="#" class="employees__linkedin">
+                  <img src="images/employees__linkedin.svg" alt="" class="employees__logo" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="employees__item">
+        <div class="employees__item-left"></div>
+        <div class="employees__item-right">
+          <img src="images/employees__bodnev.jpg" alt="" class="employees__foto" />
+          <div class="employees__descr">
+            <div class="employees__name">Антон Боднев</div>
+            <div class="employees__post">Фронтенд разработчик / мотиватор</div>
+            <ul class="employees__social">
+              <li class="employees__social-item">
+                <a href="#" class="employees__inst">
+                  <img src="images/employees__inst.svg" alt="" class="employees__logo" />
+                </a>
+              </li>
+              <li class="employees__social-item">
+                <a href="#" class="employees__vk">
+                  <img src="images/employees__vk.svg" alt="" class="employees__logo" />
+                </a>
+              </li>
+              <li class="employees__social-item">
+                <a href="#" class="employees__linkedin">
+                  <img src="images/employees__linkedin.svg" alt="" class="employees__logo" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="employees__item">
+        <div class="employees__item-left"></div>
+        <div class="employees__item-right">
+          <img src="images/employees__borisenko.jpg" alt="" class="employees__foto" />
+          <div class="employees__descr">
+            <div class="employees__name">Сергей Борисенко</div>
+            <div class="employees__post">Ответственный за алкогольные вечеринки</div>
+            <ul class="employees__social">
+              <li class="employees__social-item">
+                <a href="#" class="employees__inst">
+                  <img src="images/employees__inst.svg" alt="" class="employees__logo" />
+                </a>
+              </li>
+              <li class="employees__social-item">
+                <a href="#" class="employees__vk">
+                  <img src="images/employees__vk.svg" alt="" class="employees__logo" />
+                </a>
+              </li>
+              <li class="employees__social-item">
+                <a href="#" class="employees__linkedin">
+                  <img src="images/employees__linkedin.svg" alt="" class="employees__logo" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="container">
+    <div class="contact__header">Наши контакты</div>
+    <div class="contact__wrapper">
+      <div class="contact__wrapper-left">
+        <ul class="contact__social">
+          <li class="contact__social-item">
+            <img src="images/contact__phone.svg" alt="" class="contact__social-icon" />
+            <div class="contact__social-text">
+              <div class="contact__social-title">Телефон</div>
+              <div class="contact__social-descr">+7 918 511 52 23</div>
+            </div>
+          </li>
+          <li class="contact__social-item">
+            <img src="images/contact__mail.svg" alt="" class="contact__social-icon" />
+            <div class="contact__social-text">
+              <div class="contact__social-title">E-mail</div>
+              <div class="contact__social-descr">info@pdv.ooo</div>
+            </div>
+          </li>
+          <li class="contact__social-item">
+            <img src="images/contact__whatsup.svg" alt="" class="contact__social-icon" />
+            <div class="contact__social-text">
+              <div class="contact__social-title">Whatsapp</div>
+              <div class="contact__social-descr">+7 950 844 80 92</div>
+            </div>
+          </li>
+          <li class="contact__social-item">
+            <img src="images/contact__skype.svg" alt="" class="contact__social-icon" />
+            <div class="contact__social-text">
+              <div class="contact__social-title">Skype</div>
+              <div class="contact__social-descr">dusugen.io</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="contact__wrapper-right">
+        <ul class="contact__list">
+          <li class="contact__item">
+            <div class="contact__item-name">Полное название :</div>
+            <div class="contact__item-answ">ООО "Поставщик Дальнего Востока"</div>
+          </li>
+          <li class="contact__item">
+            <div class="contact__item-name">ИНН :</div>
+            <div class="contact__item-answ">7329023100</div>
+          </li>
+          <li class="contact__item">
+            <div class="contact__item-name">КПП :</div>
+            <div class="contact__item-answ">732901001</div>
+          </li>
+          <li class="contact__item">
+            <div class="contact__item-name">ОГРН :</div>
+            <div class="contact__item-answ">1167325074762</div>
+          </li>
+          <li class="contact__item">
+            <div class="contact__item-name">Адрес :</div>
+            <div class="contact__item-answ">
+              Россия, Ульяновская обл, территория Портовой Особой Экономической Зоны, проезд Первых
+              Резидентов дом 3
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="task">
+  <div class="container">
+    <div class="task__wrapper">
+      <div class="task__text">
+        <div class="task__text-header">Свяжитесь с нами</div>
+        <form action="#" class="task__form">
+          <textarea
+            placeholder="Опишите задачу..."
+            name="task__form"
+            id="task"
+            rows="30"
+            class="task__form-area"
+          ></textarea>
+          <label for="file" class="task__form-text task__form-text--file">
+            <img src="images/task__file.svg" alt="" class="task__form-icon" />
+            <div class="task__form-name">Прикрепите ТЗ</div>
+          </label>
+          <input type="file" name="form__file" id="file" hidden />
+
+          <label for="file" class="task__form-text task__form-text--photo">
+            <img src="images/task__photo.svg" alt="" class="task__form-icon" />
+            <div class="task__form-name">Добавьте фото товара</div>
+          </label>
+          <input type="file" name="form__file" id="file" hidden />
+          <button type="submit" class="task__form-btn">Отправить заявку</button>
+        </form>
+      </div>
+      <div class="task__img"></div>
+    </div>
+  </div>
+</section>
+
+<section class="video">
+  <div class="container">
+    <div class="video__header">Видео о нашей работе</div>
+    <div class="video__descr">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+      labore et dolore magna aliqua. Elit duis tristique sollicitudin nibh sit amet. Ultrices eros
+      in cursus turpis massa tincidunt. Venenatis urna cursus eget nunc scelerisque viverra mauris
+      in. Pharetra convallis posuere morbi leo urna. Eget sit amet tellus cras adipiscing.
+    </div>
+    <div class="video_movie">
+      <!-- <video height="620" width="1200"> -->
+      <iframe
+        width="1110"
+        height="468"
+        src="https://www.youtube.com/embed/da5x-__kvGY"
+        title="Porsche 992 GT3 Touring | Night Vibes 4K"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <!-- </video> -->
+    </div>
+  </div>
+</section>
 
 	<script src="js/app.min.js"></script>
-
 </body>
 </html>

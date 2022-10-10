@@ -1,25 +1,21 @@
 .profit {
-  position: relative;
   &__hero {
-    background-image: url(/images/src/profit__hero--small.png);
+    display: flex;
+    align-items: center;
+    background-image: url(/images/src/profit__hero.png);
     background-repeat: no-repeat;
     background-size: cover;
     margin-left: -100px;
-    align-items: flex-end;
-    min-width: 1340px;
-  }
-  &__hero-trapezoid {
+    max-height: 450px;
+    height: 450px;
     margin-bottom: 72px;
-    width: 769px;
-    border-bottom: 453px solid #0b7572;
-    border-right: 420px solid transparent;
   }
+
   &__header {
-    position: absolute;
-    top: 160px;
-    left: 101px;
-    width: 362px;
+    max-width: 362px;
+    width: 100%;
     font-family: $PrimaryFont;
+    margin-left: 101px;
     font-size: 48px;
     line-height: 60px;
     font-weight: 600;

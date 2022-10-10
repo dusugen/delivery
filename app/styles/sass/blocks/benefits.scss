@@ -1,20 +1,18 @@
 .benefits__content {
   display: flex;
   justify-content: space-between;
-  padding: 40px 80px 56px 80px;
+  padding: 40px 0px 56px 0px;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
   margin-bottom: 100px;
 }
 .benefits__card {
-  width: 320px;
+  flex: 0 1 33%;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 .benefits__card:not(:last-child) {
   border-right: 1px solid #d7d7dd;
-  padding-right: 92px;
-}
-.benefits__card:last-child {
-  width: 228px;
 }
 .benefits__icon {
   margin-bottom: 24px;

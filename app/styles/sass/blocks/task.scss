@@ -1,0 +1,73 @@
+.task {
+  &__wrapper {
+    display: flex;
+    background-image: url("/images/src/task__main.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &__text {
+    flex: 0 1 56%;
+    background-color: #0b7572;
+    padding: 58px 64px 53px 56px;
+  }
+
+  &__text-header {
+    font-family: $SecondaryFont;
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 72px;
+  }
+
+  &__form-area {
+    padding: 10px;
+    margin-bottom: 56px;
+    max-width: 579px;
+    max-height: 223px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    background-color: #0b7572;
+    &::placeholder {
+      font-family: $SecondaryFont;
+      font-size: 16px;
+      line-height: 20px;
+      color: #fff;
+      opacity: 1;
+    }
+  }
+
+  &__form-text {
+    display: flex;
+    font-family: $SecondaryFont;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    padding-bottom: 19px;
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+    &--file {
+      margin-bottom: 32px;
+    }
+    &--photo {
+      margin-bottom: 66px;
+    }
+  }
+  &__form-icon {
+    margin-right: 16px;
+  }
+  &__form-btn {
+    font-family: $PrimaryFont;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #0b7572;
+    padding: 13px 26px;
+    border-radius: 4px;
+    background-color: #fff;
+    border: none;
+  }
+}

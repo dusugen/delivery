@@ -1,0 +1,31 @@
+<section class="task">
+  <div class="container">
+    <div class="task__wrapper">
+      <div class="task__text">
+        <div class="task__text-header">Свяжитесь с нами</div>
+        <form action="#" class="task__form">
+          <textarea
+            placeholder="Опишите задачу..."
+            name="task__form"
+            id="task"
+            rows="30"
+            class="task__form-area"
+          ></textarea>
+          <label for="file" class="task__form-text task__form-text--file">
+            <img src="images/src/task__file.svg" alt="" class="task__form-icon" />
+            <div class="task__form-name">Прикрепите ТЗ</div>
+          </label>
+          <input type="file" name="form__file" id="file" hidden />
+
+          <label for="file" class="task__form-text task__form-text--photo">
+            <img src="images/src/task__photo.svg" alt="" class="task__form-icon" />
+            <div class="task__form-name">Добавьте фото товара</div>
+          </label>
+          <input type="file" name="form__file" id="file" hidden />
+          <button type="submit" class="task__form-btn">Отправить заявку</button>
+        </form>
+      </div>
+      <div class="task__img"></div>
+    </div>
+  </div>
+</section>

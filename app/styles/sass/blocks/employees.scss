@@ -1,10 +1,11 @@
 .employees {
   &__header {
+    letter-spacing: 0.65px;
     font-family: $PrimaryFont;
     font-size: 48px;
     line-height: 60px;
     font-weight: 600;
-    margin-bottom: 72px;
+    margin-bottom: 60px;
   }
 
   &__list {
@@ -27,7 +28,7 @@
       margin-bottom: 0px;
     }
     &:not(:nth-child(2n)) {
-      margin-right: 30px;
+      margin-right: 39px;
     }
   }
   &__item-left {
@@ -42,8 +43,8 @@
   }
 
   &__foto {
-    width: 168px;
-    height: 168px;
+    width: 138px;
+    max-height: 138px;
     border-radius: 50%;
     object-fit: cover;
     margin-right: 40px;
@@ -56,7 +57,7 @@
     font-size: 20px;
     line-height: 24px;
     font-weight: 600;
-    margin-bottom: 12px;
+    margin-bottom: 9px;
     margin-top: 47px;
   }
 
@@ -65,8 +66,8 @@
     color: $SecondaryColor;
     font-size: 14px;
     line-height: 21px;
-    padding-bottom: 5px;
-    margin-bottom: 45px;
+    padding-bottom: 6px;
+    margin-bottom: 29px;
     border-bottom: 3px solid #ffce50;
   }
 

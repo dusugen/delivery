@@ -2,11 +2,12 @@
   &__wrapper {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 93px;
   }
   &__counter {
-    flex: 0 1 46%;
-    padding-top: 170px;
-    padding-left: 140px;
+    flex: 0 1 42%;
+    padding-top: 161px;
+    padding-left: 109px;
   }
   &__counter-title {
     font-family: $PrimaryFont;
@@ -14,6 +15,7 @@
     font-size: 20px;
     font-weight: 600;
     line-height: 30px;
+    margin: 0;
   }
   &__counter-number {
     font-size: 54px;
@@ -23,7 +25,7 @@
   }
   &__counter-box {
     max-width: 237px;
-    padding-bottom: 6px;
+    padding-bottom: 18px;
     border-bottom: 3px solid #ffce50;
   }
   &__counter-text {
@@ -31,18 +33,21 @@
     color: $SecondaryColor;
     font-size: 18px;
     line-height: 24px;
+    font-family: $SecondaryFont;
+    color: $SecondaryColor;
+    font-weight: 600;
   }
   &__choice {
-    flex: 0 1 54%;
-    margin-bottom: 100px;
+    flex: 0 1 58%;
   }
   &__title {
     font-size: 48px;
+    letter-spacing: 0.54px;
     font-family: $PrimaryFont;
     color: $PrimaryColor;
     line-height: 60px;
     font-weight: 600;
-    margin-bottom: 32px;
+    margin-bottom: 20px;
   }
   &__descr {
     font-family: $SecondaryFont;
@@ -55,32 +60,34 @@
 .card {
   &__wrapper {
     display: flex;
-    // align-items: flex-start;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.12);
     border-radius: 10px;
-    padding-top: 40px;
+    padding-top: 33px;
     &:not(:last-child) {
       margin-bottom: 16px;
     }
   }
 
   &__radio-wrapper {
-    margin-top: 8px;
-    margin-right: 32px;
-    margin-left: 40px;
+    margin-top: 10px;
+    margin-right: 36px;
+    margin-left: 45px;
   }
   &__radio-input {
     zoom: 1.2;
   }
 
   &__title {
+    letter-spacing: 0.2px;
     font-family: $PrimaryFont;
     font-size: 20px;
     line-height: 30px;
     font-weight: 600;
-    margin-bottom: 24px;
+    margin-bottom: 17px;
   }
   &__descr {
+    max-width: 446px;
+    width: 100%;
     font-family: $SecondaryFont;
     color: $SecondaryColor;
     font-size: 16px;

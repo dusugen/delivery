@@ -1,11 +1,12 @@
 .contact {
   margin-bottom: 196px;
   &__header {
+    letter-spacing: 0.65px;
     font-family: $PrimaryFont;
     font-size: 48px;
     line-height: 60px;
     font-weight: 600;
-    margin-bottom: 94px;
+    margin-bottom: 86px;
   }
   &__wrapper {
     display: flex;
@@ -21,11 +22,12 @@
   &__social-item {
     display: flex;
     &:not(:last-child) {
-      margin-bottom: 44px;
+      margin-bottom: 41px;
     }
   }
 
   &__social-icon {
+    width: 28px;
     align-items: center;
     margin-right: 32px;
   }
@@ -34,7 +36,6 @@
     color: $SecondaryColor;
     font-size: 14px;
     line-height: 21px;
-    margin-bottom: 8px;
   }
   &__social-descr {
     font-family: $PrimaryFont;
@@ -46,12 +47,14 @@
   &__item {
     display: flex;
     align-items: center;
-    padding: 23px 0;
-    border-bottom: 1px solid #e9eaf2;
+    padding: 23px 0px 10px 48px;
+    &:not(:last-child) {
+      border-bottom: 1px solid #e9eaf2;
+    }
   }
 
   &__item-name {
-    padding-left: 48px;
+    // padding-left: 62px;
     flex: 0 1 35%;
     font-family: $SecondaryFont;
     color: $SecondaryColor;

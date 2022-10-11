@@ -6,14 +6,13 @@
     background-repeat: no-repeat;
     background-size: cover;
     margin-left: -100px;
-    max-height: 450px;
-    height: 450px;
+    max-height: 453px;
+    height: 453px;
     margin-bottom: 72px;
   }
 
   &__header {
     max-width: 362px;
-    width: 100%;
     font-family: $PrimaryFont;
     margin-left: 101px;
     font-size: 48px;
@@ -24,14 +23,14 @@
   &__list {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 120px;
+    margin-bottom: 113px;
   }
   &__item {
     max-width: 447px;
     display: flex;
     flex-direction: row;
     &:not(:nth-child(2n)) {
-      margin-bottom: 62px;
+      margin-bottom: 58px;
     }
   }
   &__item-left {
@@ -53,7 +52,7 @@
     font-size: 20px;
     line-height: 27px;
     font-weight: 600;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
   }
   &__descr {
     font-family: $SecondaryFont;

@@ -2,30 +2,32 @@
   &__wrapper {
     display: flex;
     background-image: url("../images/task__main.png");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     margin-bottom: 125px;
   }
   &__text {
-    flex: 0 1 56%;
+    flex: 0 1 56.5%;
     background-color: #0b7572;
-    padding: 58px 64px 53px 56px;
+    padding: 59px 64px 53px 56px;
   }
 
   &__text-header {
-    font-family: $SecondaryFont;
+    letter-spacing: 0.5px;
+    font-family: $PrimaryFont;
     font-size: 48px;
     line-height: 60px;
     font-weight: 600;
     color: #fff;
-    margin-bottom: 72px;
+    margin-bottom: 49px;
   }
 
   &__form-area {
-    padding: 10px;
-    margin-bottom: 56px;
+    font-family: $SecondaryFont;
+    padding: 10px 0;
+    margin-bottom: 49px;
     max-width: 579px;
-    max-height: 223px;
+    max-height: 235px;
     height: 100%;
     width: 100%;
     border: none;
@@ -47,26 +49,29 @@
     font-size: 16px;
     line-height: 20px;
     color: #fff;
-    padding-bottom: 19px;
+
     border-bottom: 1px solid #fff;
     cursor: pointer;
     &--file {
-      margin-bottom: 32px;
+      margin-bottom: 31px;
+      padding-bottom: 15px;
     }
     &--photo {
       margin-bottom: 66px;
+      padding-bottom: 14px;
     }
   }
   &__form-icon {
-    margin-right: 16px;
+    margin-right: 17px;
   }
+
   &__form-btn {
     font-family: $PrimaryFont;
     font-size: 16px;
     line-height: 24px;
     font-weight: 600;
     color: #0b7572;
-    padding: 13px 26px;
+    padding: 13px 36px;
     border-radius: 4px;
     background-color: #fff;
     border: none;

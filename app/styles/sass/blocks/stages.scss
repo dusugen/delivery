@@ -3,18 +3,14 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 120px;
-    margin-left: 36px;
+    margin-left: 49px;
   }
   &__item {
     position: relative;
     display: flex;
     border-radius: 10px;
     padding: 32px 0;
-    background-image: radial-gradient(
-      circle at 0%,
-      transparent 41px,
-      #fff 31px
-    );
+    background-image: radial-gradient(circle at 0%, transparent 45px, #fff 31px);
     filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.12));
     background-position-y: center;
     &::before {
@@ -22,7 +18,7 @@
       content: "";
       width: 68px;
       height: 68px;
-      left: -36px;
+      left: -48px;
       top: calc(50% - 34px);
       text-align: center;
       line-height: 68px;
@@ -53,25 +49,28 @@
     width: 85px;
     height: 1px;
     border-bottom: 3px solid #ffce50;
-    margin-bottom: 24px;
+    margin-bottom: 22px;
   }
 
   &__header {
+    letter-spacing: 0.75px;
     font-family: $PrimaryFont;
     font-size: 48px;
     line-height: 60px;
     font-weight: 600;
-    margin-bottom: 48px;
+    margin-bottom: 36px;
   }
   &__item-title {
+    letter-spacing: 0.2px;
     font-family: $PrimaryFont;
     font-size: 20px;
     line-height: 25px;
     font-weight: 600;
-    margin-bottom: 24px;
+    margin-bottom: 17px;
   }
 
   &__item-descr {
+    max-width: 568px;
     font-family: $SecondaryFont;
     color: $SecondaryColor;
     font-size: 16px;

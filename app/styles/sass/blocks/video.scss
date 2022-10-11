@@ -1,10 +1,11 @@
 .video {
   &__header {
+    letter-spacing: 0.5px;
     font-family: $PrimaryFont;
     font-size: 48px;
     line-height: 60px;
     font-weight: 600;
-    margin-bottom: 32px;
+    margin-bottom: 20px;
   }
 
   &__descr {

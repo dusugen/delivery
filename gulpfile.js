@@ -14,9 +14,6 @@ import gulpSass from "gulp-sass";
 import dartSass from "sass";
 import sassglob from "gulp-sass-glob";
 const sass = gulpSass(dartSass);
-import less from "gulp-less";
-import lessglob from "gulp-less-glob";
-import styl from "gulp-stylus";
 import stylglob from "gulp-noop";
 import postCss from "gulp-postcss";
 import cssnano from "cssnano";
@@ -48,7 +45,11 @@ function scripts() {
           mode: "production",
           performance: { hints: false },
           plugins: [
-            new webpack.ProvidePlugin({ $: "jquery", jQuery: "jquery", "window.jQuery": "jquery" }), // jQuery (npm i jquery)
+            new webpack.ProvidePlugin({
+              $: "jquery",
+              jQuery: "jquery",
+              "window.jQuery": "jquery",
+            }), // jQuery (npm i jquery)
           ],
           module: {
             rules: [
@@ -82,7 +83,7 @@ function scripts() {
       this.emit("end");
     })
     .pipe(concat("app.min.js"))
-    .pipe(dest("app/js"))
+    .pipe(dest("dist/js"))
     .pipe(browserSync.stream());
 }
 
@@ -164,6 +165,6 @@ function startwatch() {
 
 export { scripts, styles, images, deploy };
 export let assets = series(scripts, styles, images);
-export let build = series(cleandist, images, scripts, styles, buildcopy, buildhtml);
+export let build = series(cleandist, images, scripts, buildcopy, styles, buildhtml);
 
 export default series(scripts, styles, images, parallel(browsersync, startwatch));

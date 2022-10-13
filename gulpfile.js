@@ -83,7 +83,7 @@ function scripts() {
       this.emit("end");
     })
     .pipe(concat("app.min.js"))
-    .pipe(dest("dist/js"))
+    .pipe(dest("app/js"))
     .pipe(browserSync.stream());
 }
 

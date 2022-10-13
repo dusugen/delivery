@@ -2,19 +2,19 @@
   &__header {
     letter-spacing: 0.5px;
     font-family: $PrimaryFont;
-    font-size: 48px;
-    line-height: 60px;
+    font-size: 4.8rem;
+    line-height: 6rem;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
   }
 
   &__descr {
-    max-width: 850px;
+    max-width: 85rem;
     width: 100%;
     font-family: $SecondaryFont;
     color: $SecondaryColor;
-    font-size: 16px;
-    line-height: 24px;
-    margin-bottom: 40px;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin-bottom: 4rem;
   }
 }

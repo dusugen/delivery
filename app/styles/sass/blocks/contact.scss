@@ -1,12 +1,12 @@
 .contact {
-  margin-bottom: 196px;
+  margin-bottom: 19.6rem;
   &__header {
     letter-spacing: 0.65px;
     font-family: $PrimaryFont;
-    font-size: 48px;
-    line-height: 60px;
+    font-size: 4.8rem;
+    line-height: 6rem;
     font-weight: 600;
-    margin-bottom: 86px;
+    margin-bottom: 8.6rem;
   }
   &__wrapper {
     display: flex;
@@ -22,7 +22,7 @@
   &__social-item {
     display: flex;
     &:not(:last-child) {
-      margin-bottom: 41px;
+      margin-bottom: 4.1rem;
     }
   }
 
@@ -31,46 +31,60 @@
   }
 
   &__social-icon {
-    width: 28px;
+    width: 2.8rem;
     align-items: center;
-    margin-right: 32px;
+    margin-right: 3.2rem;
   }
   &__social-title {
     font-family: $SecondaryFont;
     color: $SecondaryColor;
-    font-size: 14px;
-    line-height: 21px;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
   }
   &__social-descr {
     font-family: $PrimaryFont;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 2rem;
+    line-height: 2.4rem;
     font-weight: 600;
   }
 
   &__item {
     display: flex;
     align-items: center;
-    padding: 23px 0px 10px 48px;
+    padding: 2.3rem 0px 1rem 4.8rem;
     &:not(:last-child) {
       border-bottom: 1px solid #e9eaf2;
     }
   }
 
   &__item-name {
-    // padding-left: 62px;
     flex: 0 1 35%;
     font-family: $SecondaryFont;
     color: $SecondaryColor;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1.6rem;
+    line-height: 2rem;
   }
 
   &__item-answ {
     flex: 0 1 65%;
     font-family: $PrimaryFont;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1.6rem;
+    line-height: 2rem;
     font-weight: 600;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .contact {
+    margin-bottom: 8.8rem;
+    &__header {
+      margin-bottom: 6.4rem;
+    }
+    &__wrapper {
+      display: block;
+    }
+    &__social {
+      margin-bottom: 6.4rem;
+    }
   }
 }

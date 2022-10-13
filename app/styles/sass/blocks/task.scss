@@ -4,40 +4,41 @@
     background-image: url("../images/task__main.png");
     background-size: contain;
     background-repeat: no-repeat;
-    margin-bottom: 125px;
+    margin-bottom: 12.5rem;
   }
   &__text {
     flex: 0 1 56.5%;
     background-color: #0b7572;
-    padding: 59px 64px 53px 56px;
+    padding: 5.9rem 6.4rem 5.3rem 5.6rem;
   }
 
   &__text-header {
     letter-spacing: 0.5px;
     font-family: $PrimaryFont;
-    font-size: 48px;
-    line-height: 60px;
+    font-size: 4.8rem;
+    line-height: 6rem;
     font-weight: 600;
     color: #fff;
-    margin-bottom: 49px;
+    margin-bottom: 4.9rem;
   }
 
   &__form-area {
     font-family: $SecondaryFont;
-    padding: 10px 0;
-    margin-bottom: 49px;
-    max-width: 579px;
-    max-height: 235px;
+    padding: 1rem 0;
+    margin-bottom: 4.9rem;
+    max-width: 57.9rem;
+    max-height: 23.5rem;
     height: 100%;
     width: 100%;
     border: none;
     color: #fff;
     border-bottom: 1px solid #fff;
     background-color: #0b7572;
+    resize: none;
     &::placeholder {
       font-family: $SecondaryFont;
-      font-size: 16px;
-      line-height: 20px;
+      font-size: 1.6rem;
+      line-height: 2rem;
       color: #fff;
       opacity: 1;
     }
@@ -46,34 +47,47 @@
   &__form-text {
     display: flex;
     font-family: $SecondaryFont;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1.6rem;
+    line-height: 2rem;
     color: #fff;
 
     border-bottom: 1px solid #fff;
     cursor: pointer;
     &--file {
-      margin-bottom: 31px;
-      padding-bottom: 15px;
+      margin-bottom: 3.1rem;
+      padding-bottom: 1.5rem;
     }
     &--photo {
-      margin-bottom: 66px;
-      padding-bottom: 14px;
+      margin-bottom: 6.6rem;
+      padding-bottom: 1.4rem;
     }
   }
   &__form-icon {
-    margin-right: 17px;
+    margin-right: 1.7rem;
   }
 
   &__form-btn {
     font-family: $PrimaryFont;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
     font-weight: 600;
     color: #0b7572;
-    padding: 13px 36px;
-    border-radius: 4px;
+    padding: 1.3rem 3.6rem;
+    border-radius: 0.4rem;
     background-color: #fff;
     border: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .task {
+    &__wrapper {
+      background-image: none;
+      display: block;
+      margin-bottom: 8.8rem;
+    }
+    &__form-area {
+      max-width: 100%;
+    }
   }
 }

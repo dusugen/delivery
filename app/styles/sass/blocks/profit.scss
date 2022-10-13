@@ -61,3 +61,27 @@
     line-height: 24px;
   }
 }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .profit {
+    &__hero {
+      margin-bottom: 4.8rem;
+    }
+    &__list {
+      display: block;
+      margin-bottom: 10rem;
+    }
+
+    &__item-left {
+      margin-left: 0rem;
+    }
+    &__item-right {
+      margin-right: 0rem;
+      margin-left: 0rem;
+    }
+
+    &__item {
+      margin-bottom: 4.8rem;
+    }
+  }
+}

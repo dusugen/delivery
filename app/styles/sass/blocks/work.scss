@@ -2,37 +2,37 @@
   &__wrapper {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 93px;
+    margin-bottom: 9.3rem;
   }
   &__counter {
     flex: 0 1 42%;
-    padding-top: 161px;
-    padding-left: 109px;
+    padding-top: 16.1rem;
+    padding-left: 10.9rem;
   }
   &__counter-title {
     font-family: $PrimaryFont;
     color: $PrimaryColor;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 600;
-    line-height: 30px;
+    line-height: 3rem;
     margin: 0;
   }
   &__counter-number {
-    font-size: 54px;
-    line-height: 81px;
+    font-size: 5.4rem;
+    line-height: 8.1rem;
     font-family: $PrimaryFont;
     font-weight: 600;
   }
   &__counter-box {
-    max-width: 237px;
-    padding-bottom: 18px;
+    max-width: 23.7rem;
+    padding-bottom: 1.8rem;
     border-bottom: 3px solid #ffce50;
   }
   &__counter-text {
     font-family: $SecondaryFont;
     color: $SecondaryColor;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
     font-family: $SecondaryFont;
     color: $SecondaryColor;
     font-weight: 600;
@@ -41,30 +41,30 @@
     flex: 0 1 58%;
   }
   &__title {
-    font-size: 48px;
+    font-size: 4.8rem;
     letter-spacing: 0.54px;
     font-family: $PrimaryFont;
     color: $PrimaryColor;
-    line-height: 60px;
+    line-height: 6rem;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
   }
   &__descr {
     font-family: $SecondaryFont;
     color: $SecondaryColor;
-    line-height: 24px;
-    margin-bottom: 40px;
+    line-height: 2.4rem;
+    margin-bottom: 4rem;
   }
 }
 
 .card {
   &__wrapper {
     display: flex;
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 0.3rem 1.5rem rgba(0, 0, 0, 0.12);
     border-radius: 10px;
-    padding-top: 33px;
+    padding-top: 3.3rem;
     &:not(:last-child) {
-      margin-bottom: 16px;
+      margin-bottom: 1.6rem;
     }
   }
 
@@ -73,9 +73,9 @@
   }
 
   &__radio-wrapper {
-    margin-top: 10px;
-    margin-right: 36px;
-    margin-left: 45px;
+    margin-top: 1rem;
+    margin-right: 3.6rem;
+    margin-left: 4.5rem;
   }
   &__radio-input {
     zoom: 1.2;
@@ -84,18 +84,31 @@
   &__title {
     letter-spacing: 0.2px;
     font-family: $PrimaryFont;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 2rem;
+    line-height: 3rem;
     font-weight: 600;
-    margin-bottom: 17px;
+    margin-bottom: 1.7rem;
   }
   &__descr {
-    max-width: 446px;
+    max-width: 44.6rem;
     width: 100%;
     font-family: $SecondaryFont;
     color: $SecondaryColor;
-    font-size: 16px;
-    line-height: 24px;
-    margin-bottom: 48px;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin-bottom: 4.8rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .work {
+    &__wrapper {
+      display: block;
+      margin-bottom: 8.8rem;
+    }
+
+    &__counter {
+      display: none;
+    }
   }
 }

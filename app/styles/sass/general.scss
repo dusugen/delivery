@@ -52,6 +52,14 @@ body {
   overflow-x: hidden;
   list-style-type: none;
 }
+
+.container {
+  padding: 0rem 7rem;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 @media (min-width: 375px) and (max-width: 767px) {
   .container {
     padding: 0 1.6rem;

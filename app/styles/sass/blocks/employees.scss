@@ -81,6 +81,51 @@
   }
 }
 
+@media (min-width: 375px) and (max-width: 767px) {
+  .employees {
+    &__header {
+      font-size: 2.8rem;
+      line-height: 125%;
+      margin-bottom: 3.2rem;
+    }
+    &__list {
+      display: block;
+      margin-bottom: 11.6rem;
+    }
+    &__item {
+      &:not(:nth-child(2n)) {
+        margin-right: 0rem;
+      }
+    }
+    &__item--mobile-hidden {
+      display: none;
+    }
+    &__item-left {
+      width: 2rem;
+      margin-right: 1.6rem;
+    }
+    &__item-right {
+      padding: 2.4rem 0;
+    }
+    &__foto {
+      margin: 0;
+      max-width: 10rem;
+      max-height: 10rem;
+      margin-right: 1.6rem;
+    }
+    &__name {
+      font-size: 1.8rem;
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+    &__post {
+      font-size: 1.4rem;
+      line-height: 150%;
+      margin-bottom: 1.4rem;
+    }
+  }
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
   .employees {
     &__header {

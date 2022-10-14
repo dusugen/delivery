@@ -76,6 +76,9 @@
     font-size: 1.6rem;
     line-height: 2.4rem;
   }
+  &__item-descr--phone {
+    display: none;
+  }
 
   &__item-img {
     height: 18.1rem;
@@ -84,6 +87,52 @@
     &::before {
       position: absolute;
       content: "";
+    }
+  }
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .stages {
+    &__header {
+      font-size: 2.8rem;
+      line-height: 125%;
+      margin-bottom: 3rem;
+    }
+    &__list {
+      margin-bottom: 6.4rem;
+    }
+    &__item {
+      padding: 2.4rem 0 2.4rem 4.3rem;
+      background-image: radial-gradient(circle at 0%, transparent 33px, #fff 33px);
+      &::before {
+        width: 5.2rem;
+        height: 5.2rem;
+        line-height: 5.2rem;
+        top: calc(50% - 2.6rem);
+        font-size: 3rem;
+        font-weight: 600;
+        left: -2.8rem;
+      }
+      &:not(:last-child) {
+        margin-bottom: 1.4rem;
+      }
+    }
+    &__item-title {
+      font-size: 1.8rem;
+      line-height: 125%;
+      margin-bottom: 1.6rem;
+    }
+    &__item-line {
+      display: none;
+    }
+    &__item-img {
+      display: none;
+    }
+    &__item-descr--desktop {
+      display: none;
+    }
+    &__item-descr--phone {
+      display: inline;
     }
   }
 }

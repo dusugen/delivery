@@ -5,60 +5,113 @@
     background-image: url(../images/profit__hero.png);
     background-repeat: no-repeat;
     background-size: cover;
-    margin-left: -100px;
-    max-height: 453px;
-    height: 453px;
-    margin-bottom: 72px;
+    margin-left: -10rem;
+    max-height: 45.3rem;
+    height: 45.3rem;
+    margin-bottom: 7.2rem;
   }
 
   &__header {
-    max-width: 362px;
+    max-width: 36.2rem;
     font-family: $PrimaryFont;
-    margin-left: 101px;
-    font-size: 48px;
-    line-height: 60px;
+    margin-left: 10.1rem;
+    font-size: 4.8rem;
+    line-height: 6rem;
     font-weight: 600;
     color: #fff;
   }
   &__list {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 113px;
+    margin-bottom: 11.3rem;
   }
   &__item {
-    max-width: 447px;
+    max-width: 44.7rem;
     display: flex;
     flex-direction: row;
     &:not(:nth-child(2n)) {
-      margin-bottom: 58px;
+      margin-bottom: 5.8rem;
     }
   }
   &__item-left {
     display: flex;
     flex-direction: column;
-    margin-left: 64px;
+    margin-left: 6.4rem;
   }
 
   &__item-right {
-    margin-right: 142px;
+    margin-right: 14.2rem;
   }
 
   &__icon {
-    margin-right: 40px;
+    margin-right: 4rem;
   }
 
   &__title {
     font-family: $PrimaryFont;
-    font-size: 20px;
-    line-height: 27px;
+    font-size: 2rem;
+    line-height: 2.7rem;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
   }
   &__descr {
     font-family: $SecondaryFont;
     color: $SecondaryColor;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .profit {
+    &__hero {
+      display: block;
+      text-align: start;
+      margin-left: 0rem;
+      height: auto;
+      align-items: baseline;
+      background-image: none;
+      margin-bottom: 4.8rem;
+    }
+    &__header {
+      max-width: none;
+      margin-left: 0;
+      font-size: 3rem;
+      line-height: 125%;
+      color: $PrimaryColor;
+    }
+    &__list {
+      display: block;
+      margin-bottom: 7.2rem;
+    }
+    &__item {
+      margin-bottom: 3.8rem;
+      &:not(:nth-child(2n)) {
+        margin-bottom: 3.8rem;
+      }
+    }
+    &__item-left {
+      margin-left: 0rem;
+    }
+    &__item-right {
+      margin-right: 0rem;
+    }
+    &__icon {
+      margin-right: 1.6rem;
+      img {
+        max-width: 5.2rem;
+        max-height: 5.2rem;
+      }
+    }
+    &__title {
+      font-size: 1.8rem;
+      line-height: 135%;
+      margin-bottom: 1.2rem;
+    }
+    &__descr {
+      font-size: 1.5rem;
+      line-height: 150%;
+    }
   }
 }
 

@@ -31,6 +31,39 @@
   color: $SecondaryColor;
 }
 
+@media (min-width: 375px) and (max-width: 767px) {
+  .benefits {
+    &__content {
+      flex-direction: column;
+      padding: 2.4rem 0 3.2rem 0;
+      margin-bottom: 6.4rem;
+    }
+    &__card {
+      padding-left: 2.8rem;
+      padding-right: 2.8rem;
+      &:not(:last-child) {
+        margin-bottom: 2.4rem;
+        border-right: none;
+      }
+    }
+    &__title {
+      font-size: 1.8rem;
+      line-height: 135%;
+      margin-bottom: 1.2rem;
+    }
+
+    &__descr {
+      font-size: 1.5rem;
+      line-height: 150%;
+    }
+    &__icon {
+      min-width: 6.8rem;
+      max-height: 6.8rem;
+      margin-bottom: 1.6rem;
+    }
+  }
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
   .benefits {
     &__content {

@@ -80,6 +80,7 @@ function scripts() {
       )
     )
     .on("error", (err) => {
+      console.log(err);
       this.emit("end");
     })
     .pipe(concat("app.min.js"))

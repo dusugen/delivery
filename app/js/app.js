@@ -1,3 +1,6 @@
+import $ from "jquery";
+import "slick-carousel";
+
 function GetMap() {
   let map = new Microsoft.Maps.Map("#myMap");
   map.setView({
@@ -28,4 +31,31 @@ function centerMap(map) {
 
 window.addEventListener("load", () => {
   centerMap(GetMap());
+  $(".complete__list").slick({
+    arrows: false,
+    infinite: false,
+    dots: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1200,
+        setting: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          dots: true,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 767,
+        setting: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+          arrows: false,
+        },
+      },
+    ],
+  });
 });

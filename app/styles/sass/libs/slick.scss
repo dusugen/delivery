@@ -1,0 +1,54 @@
+@import "../../../../node_modules/slick-carousel/slick/slick.scss";
+
+.slick {
+  &-slide {
+    max-width: 393px;
+    margin-right: 3rem;
+  }
+  &-dots {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    li {
+      display: inline-block;
+      margin: 0 5px;
+    }
+
+    button {
+      padding: 0;
+      border: 0;
+      background-color: #e9e9ec;
+      cursor: pointer;
+      border-radius: 50%;
+      height: 16px;
+      width: 16px;
+      font-size: 0;
+
+      &:hover,
+      &:focus {
+        background-color: #fff;
+      }
+    }
+  }
+  &-active {
+    button {
+      position: relative;
+      width: 25px;
+      height: 25px;
+      background-color: #fff;
+      border: 6px solid #0b7572;
+      border-radius: 50%;
+    }
+  }
+}
+
+.complete {
+  &__card-img {
+    max-width: 400px;
+  }
+}

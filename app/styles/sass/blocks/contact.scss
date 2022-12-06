@@ -1,5 +1,5 @@
 .contact {
-  margin-bottom: 19.6rem;
+  margin-bottom: 9rem;
   &__header {
     letter-spacing: 0.65px;
     font-family: $PrimaryFont;
@@ -10,6 +10,7 @@
   }
   &__wrapper {
     display: flex;
+    margin-bottom: 7rem;
   }
   &__wrapper-left {
     flex: 0 1 35%;
@@ -51,9 +52,9 @@
   &__item {
     display: flex;
     align-items: center;
-    padding: 2.3rem 0px 1rem 4.8rem;
+    padding: 2.3rem 0 1rem 4.8rem;
     &:not(:last-child) {
-      border-bottom: 1px solid #e9eaf2;
+      border-bottom: 0.1rem solid #e9eaf2;
     }
   }
 
@@ -71,6 +72,16 @@
     font-size: 1.6rem;
     line-height: 2rem;
     font-weight: 600;
+  }
+
+  &__map-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__map {
+    width: 60rem;
+    height: 30rem;
   }
 }
 

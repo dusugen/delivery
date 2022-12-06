@@ -18,7 +18,7 @@
     text-align: center;
     margin-bottom: 5rem;
     &:nth-last-child(-n + 4) {
-      margin-bottom: 0px;
+      margin-bottom: 0;
     }
     &:not(:nth-child(4n)) {
       border-right: 1px solid #d7d7dd;
@@ -89,7 +89,7 @@
       flex: 0 1 50%;
       margin-bottom: 5rem;
       &:nth-child(2n) {
-        border-right: 0px;
+        border-right: 0;
       }
       &:nth-last-child(-n + 4) {
         margin-bottom: 5rem;

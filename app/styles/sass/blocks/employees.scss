@@ -25,7 +25,7 @@
     border-radius: 1rem;
     margin-bottom: 2.4rem;
     &:nth-last-child(-n + 2) {
-      margin-bottom: 0px;
+      margin-bottom: 0;
     }
     &:not(:nth-child(2n)) {
       margin-right: 3.9rem;
@@ -68,7 +68,7 @@
     line-height: 2.1rem;
     padding-bottom: 0.6rem;
     margin-bottom: 2.9rem;
-    border-bottom: 3px solid #ffce50;
+    border-bottom: 0.3rem solid #ffce50;
   }
 
   &__social {

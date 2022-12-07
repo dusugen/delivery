@@ -24,9 +24,10 @@
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.12);
     border-radius: 10px;
     &:not(:last-child) {
-      margin-right: 3rem;
+      margin-right: 6rem;
     }
   }
+
   &__card-img {
     img {
       width: 100%;

@@ -37,23 +37,25 @@ window.addEventListener("load", () => {
     dots: true,
     slidesToShow: 2,
     slidesToScroll: 1,
+  });
+  $(".slider__wrapper").slick({
+    arrows: false,
+    dots: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 1200,
-        setting: {
+        breakpoint: 600,
+        settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          dots: true,
-          arrows: false,
         },
       },
       {
-        breakpoint: 767,
-        setting: {
+        breakpoint: 480,
+        settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          dots: true,
-          arrows: false,
         },
       },
     ],

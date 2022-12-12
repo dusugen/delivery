@@ -11,17 +11,20 @@
             rows="50"
             class="task__form-area"
           ></textarea>
-          <label for="file" class="task__form-text task__form-text--file">
-            <img src="images/task__file.svg" alt="" class="task__form-icon" />
+          <div class="form__input form__input--file">
+            <label for="formFile" class="task__form-text task__form-text--file">
+              <img src="images/task__file.svg" alt="" class="task__form-icon" />
+            </label>
             <div class="task__form-name">Прикрепите ТЗ</div>
-          </label>
-          <input type="file" name="form__file" id="file" hidden />
-
-          <label for="file" class="task__form-text task__form-text--photo">
+            <div id="form__preview-file" class="form__preview"></div>
+            <input type="file" id="formFile" name="form__file" hidden />
+          </div>
+          <label for="formImg" class="task__form-text task__form-text--photo">
             <img src="images/task__photo.svg" alt="" class="task__form-icon" />
             <div class="task__form-name">Добавьте фото товара</div>
           </label>
-          <input type="file" name="form__file" id="file" hidden />
+          <div id="form__preview-img" class="form__preview-img"></div>
+          <input type="file" id="formImg" accept=".gif, .png, .jpeg" name="form__file" hidden />
           <button type="submit" class="task__form-btn">Отправить заявку</button>
         </form>
       </div>

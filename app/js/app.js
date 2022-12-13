@@ -149,9 +149,17 @@ window.addEventListener("load", () => {
     return await response.json();
   };
 
-  document.getElementById("form").addEventListener("submit", (event) => {
+  const form = document.getElementById("form");
+  
+  form.addEventListener("submit", (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
-    sendData("https://jsonplaceholder.typicode.com/posts", formData);
+    sendData("https://jsonplaceholder.typicode.com/posts", formData)
+      .then(() => {
+        form.reset();
+      })
+      .catch((err) => {
+        console.error(err);
+      });
   });
 });

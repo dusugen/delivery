@@ -1,4 +1,4 @@
-import $, { data } from "jquery";
+import $, { data, event } from "jquery";
 import "slick-carousel";
 
 // fetch get answer
@@ -19,6 +19,7 @@ function GetMap() {
   map.entities.push(pushpin);
   return map;
 }
+
 function centerMap(map) {
   navigator.geolocation.getCurrentPosition(
     function (position) {
@@ -41,6 +42,7 @@ function centerMap(map) {
 window.addEventListener("load", () => {
   // rending map
   centerMap(GetMap());
+
   $(".complete__list").slick({
     arrows: false,
     infinite: false,
@@ -133,4 +135,23 @@ window.addEventListener("load", () => {
       }
     });
   }
+
+  // sending formdata on server
+  const sendData = async (url, data) => {
+    const response = await fetch(url, {
+      method: "POST",
+      body: data,
+    });
+
+    if (!response.ok) {
+      throw new Error(`Error on address ${url}, error status: ${response.status}`);
+    }
+    return await response.json();
+  };
+
+  document.getElementById("form").addEventListener("submit", (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    sendData("https://jsonplaceholder.typicode.com/posts", formData);
+  });
 });

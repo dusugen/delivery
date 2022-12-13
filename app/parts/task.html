@@ -3,13 +3,14 @@
     <div class="task__wrapper">
       <div class="task__text">
         <div class="task__text-header">Свяжитесь с нами</div>
-        <form action="#" class="task__form">
+        <form id="form" class="task__form">
           <textarea
             placeholder="Опишите задачу..."
-            name="task__form"
+            name="text"
             id="task"
             rows="50"
             class="task__form-area"
+            required
           ></textarea>
           <div class="form__input form__input--file">
             <label for="formFile" class="task__form-text task__form-text--file">
@@ -17,14 +18,14 @@
             </label>
             <div class="task__form-name">Прикрепите ТЗ</div>
             <div id="form__preview-file" class="form__preview"></div>
-            <input type="file" id="formFile" name="form__file" hidden />
+            <input type="file" id="formFile" name="file" hidden />
           </div>
           <label for="formImg" class="task__form-text task__form-text--photo">
             <img src="images/task__photo.svg" alt="" class="task__form-icon" />
             <div class="task__form-name">Добавьте фото товара</div>
           </label>
           <div id="form__preview-img" class="form__preview-img"></div>
-          <input type="file" id="formImg" accept=".gif, .png, .jpeg" name="form__file" hidden />
+          <input type="file" id="formImg" accept=".gif, .png, .jpeg" name="img" hidden />
           <button type="submit" class="task__form-btn">Отправить заявку</button>
         </form>
       </div>
